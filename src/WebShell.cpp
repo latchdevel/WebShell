@@ -194,7 +194,7 @@ void WebShellManager::onData(net::WebSocket& ws, const char* data, size_t length
    }
 }
 
-void WebShellManager::loop() {
+void WebShellManager::poll() {
    for (uint8_t i = 0; i < maxWebShellSessions; i++) {
       // Skip empty or inactive slots
       if (m_sessions[i].socket != nullptr && m_sessions[i].shell != nullptr) {

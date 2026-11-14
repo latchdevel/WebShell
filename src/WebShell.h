@@ -208,7 +208,7 @@ class WebShellManager {
        * Iterates through all connection slots, executes the internal loop for active 
        * shells, and checks if any session has exceeded the maximum idle timeout.
        */
-      void loop();
+      void poll();
 
       /**
        * @brief Closes all active WebShell sessions.
